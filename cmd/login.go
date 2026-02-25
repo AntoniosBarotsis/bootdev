@@ -11,7 +11,7 @@ import (
 	"strings"
 	"time"
 
-	api "github.com/bootdotdev/bootdev/client"
+	api "github.com/AntoniosBarotsis/bootdev/client"
 	"github.com/charmbracelet/lipgloss"
 	"github.com/pkg/browser"
 	"github.com/spf13/cobra"

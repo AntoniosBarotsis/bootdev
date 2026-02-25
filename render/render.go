@@ -5,8 +5,8 @@ import (
 	"os"
 	"sync"
 
-	api "github.com/bootdotdev/bootdev/client"
-	"github.com/bootdotdev/bootdev/messages"
+	api "github.com/AntoniosBarotsis/bootdev/client"
+	"github.com/AntoniosBarotsis/bootdev/messages"
 	tea "github.com/charmbracelet/bubbletea"
 	"github.com/charmbracelet/lipgloss"
 	"github.com/muesli/termenv"

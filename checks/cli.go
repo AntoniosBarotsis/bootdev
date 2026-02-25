@@ -8,7 +8,7 @@ import (
 	"runtime"
 	"strings"
 
-	api "github.com/bootdotdev/bootdev/client"
+	api "github.com/AntoniosBarotsis/bootdev/client"
 )
 
 func runCLICommand(command api.CLIStepCLICommand, variables map[string]string) (result api.CLICommandResult) {

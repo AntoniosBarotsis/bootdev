@@ -5,8 +5,8 @@ import (
 	"net/http"
 	"strings"
 
-	"github.com/bootdotdev/bootdev/checks"
-	api "github.com/bootdotdev/bootdev/client"
+	"github.com/AntoniosBarotsis/bootdev/checks"
+	api "github.com/AntoniosBarotsis/bootdev/client"
 	"github.com/goccy/go-json"
 )
 

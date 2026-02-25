@@ -6,7 +6,7 @@ import (
 	"os/exec"
 	"regexp"
 
-	"github.com/bootdotdev/bootdev/version"
+	"github.com/AntoniosBarotsis/bootdev/version"
 	"github.com/spf13/cobra"
 )
 
@@ -23,7 +23,7 @@ var upgradeCmd = &cobra.Command{
 
 		fmt.Println("Upgrading Boot.dev CLI...")
 
-		command := exec.Command("go", "install", "github.com/bootdotdev/bootdev@latest")
+		command := exec.Command("go", "install", "github.com/AntoniosBarotsis/bootdev@latest")
 		command.Stdout = os.Stdout
 		command.Stderr = os.Stderr
 		err := command.Run()

@@ -1,4 +1,4 @@
-module github.com/bootdotdev/bootdev
+module github.com/AntoniosBarotsis/bootdev
 
 go 1.24.2
 

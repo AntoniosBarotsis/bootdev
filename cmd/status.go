@@ -3,8 +3,8 @@ package cmd
 import (
 	"fmt"
 
-	api "github.com/bootdotdev/bootdev/client"
-	"github.com/bootdotdev/bootdev/version"
+	api "github.com/AntoniosBarotsis/bootdev/client"
+	"github.com/AntoniosBarotsis/bootdev/version"
 	"github.com/spf13/cobra"
 	"github.com/spf13/viper"
 )

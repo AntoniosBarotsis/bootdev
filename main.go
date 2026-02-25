@@ -6,7 +6,7 @@ import (
 
 	_ "embed"
 
-	"github.com/bootdotdev/bootdev/cmd"
+	"github.com/AntoniosBarotsis/bootdev/cmd"
 )
 
 //go:embed version.txt

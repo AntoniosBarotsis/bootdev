@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="https://github.com/bootdotdev/bootdev/assets/4583705/7a1184f1-bb43-45fa-a363-f18f8309056f" />
+  <img src="https://github.com/AntoniosBarotsis/bootdev/assets/4583705/7a1184f1-bb43-45fa-a363-f18f8309056f" />
 </p>
 
 # Boot.dev CLI
@@ -60,7 +60,7 @@ After installing Golang, _open a new shell session_ and run `go version` to make
 The following command will download, build, and install the `bootdev` command into your Go toolchain's `bin` directory. Go ahead and run it:
 
 ```sh
-go install github.com/bootdotdev/bootdev@latest
+go install github.com/AntoniosBarotsis/bootdev@latest
 ```
 
 Run `bootdev --version` on your command line to make sure the installation worked. If it did, _move on to step 3_.

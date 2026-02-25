@@ -1,6 +1,6 @@
 package messages
 
-import api "github.com/bootdotdev/bootdev/client"
+import api "github.com/AntoniosBarotsis/bootdev/client"
 
 type StartStepMsg struct {
 	ResponseVariables []api.HTTPRequestResponseVariable

@@ -9,7 +9,7 @@ import (
 	"regexp"
 	"strings"
 
-	api "github.com/bootdotdev/bootdev/client"
+	api "github.com/AntoniosBarotsis/bootdev/client"
 	"github.com/goccy/go-json"
 	"github.com/spf13/cobra"
 )
