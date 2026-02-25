@@ -3,7 +3,6 @@ package cmd
 import (
 	"errors"
 	"fmt"
-	"runtime"
 	"os"
 
 	"github.com/AntoniosBarotsis/bootdev/checks"
@@ -48,7 +47,7 @@ func submissionHandler(cmd *cobra.Command, args []string) error {
 
 	data := lesson.Lesson.LessonDataCLI.CLIData
 
-	newCmd := os.Getenv("BOOTDEV_OVERRIDE_CMD")  
+	newCmd := os.Getenv("BOOTDEV_OVERRIDE_CMD")
 	if newCmd != "" {
 		for _, val := range data.Steps {
 			if val.CLICommand.Command == "go run ." {
@@ -57,16 +56,16 @@ func submissionHandler(cmd *cobra.Command, args []string) error {
 		}
 	}
 
-	isAllowedOS := false
-	for _, system := range data.AllowedOperatingSystems {
-		if system == runtime.GOOS {
-			isAllowedOS = true
-		}
-	}
+	// isAllowedOS := false
+	// for _, system := range data.AllowedOperatingSystems {
+	// 	if system == runtime.GOOS {
+	// 		isAllowedOS = true
+	// 	}
+	// }
 
-	if !isAllowedOS {
-		return fmt.Errorf("lesson is not supported for your operating system (%s); try again with one of the following: %v", runtime.GOOS, data.AllowedOperatingSystems)
-	}
+	// if !isAllowedOS {
+	// 	return fmt.Errorf("lesson is not supported for your operating system (%s); try again with one of the following: %v", runtime.GOOS, data.AllowedOperatingSystems)
+	// }
 
 	overrideBaseURL := viper.GetString("override_base_url")
 	if overrideBaseURL != "" {
