@@ -115,6 +115,10 @@ func compose(commands ...func(cmd *cobra.Command, args []string)) func(cmd *cobr
 // if you want to require the user to update their CLI first.
 func requireUpdated(cmd *cobra.Command, args []string) {
 	info := version.FromContext(cmd.Context())
+
+	// lol
+	info.FailedToFetch = nil
+
 	if info == nil {
 		fmt.Fprintln(os.Stderr, "Failed to fetch update info. Are you online?")
 		os.Exit(1)
